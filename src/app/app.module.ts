@@ -12,11 +12,13 @@ import { AngularFireDatabaseModule } from 'angularfire2/database';
 //components
 import { AppComponent } from './app.component';
 import { WelcomeComponent } from './welcome/welcome.component';
+import { NewGeocacheComponent } from './new-geocache/new-geocache.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    WelcomeComponent
+    WelcomeComponent,
+    NewGeocacheComponent
   ],
   imports: [
     BrowserModule,
