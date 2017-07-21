@@ -1,3 +1,9 @@
 <p>
   new-geocache works!
 </p>
+
+<form>
+  <label class="newGeo" for="newName"></label>
+  <input type="text" #newName>new name<br>
+  <button (click)="submitForm(newName.value); newName.value='';">Add</button>
+</form>
