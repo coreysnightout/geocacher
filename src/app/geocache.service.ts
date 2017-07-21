@@ -4,7 +4,8 @@ import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/databa
 
 @Injectable()
 export class GeocacheService {
-
+  geocaches: FirebaseListObservable<any[]>;
+  
   constructor() { }
 
 }

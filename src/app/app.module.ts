@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
-// import { routing } from './app.routing';
+import { routing } from './app.routing';
 
 //firebase
 import { masterFirebaseConfig } from './api-keys';
@@ -22,7 +22,7 @@ import { WelcomeComponent } from './welcome/welcome.component';
     BrowserModule,
     FormsModule,
     HttpModule,
-    // routing,
+    routing,
     AngularFireModule.initializeApp(masterFirebaseConfig), //master?//
     AngularFireDatabaseModule
   ],

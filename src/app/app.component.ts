@@ -8,5 +8,5 @@ import { Geocache } from './geocache.model';
 })
 
 export class AppComponent {
-  title = 'Geocache';
+  title = 'Geocaching is Fun';
 }
