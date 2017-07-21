@@ -13,6 +13,7 @@ import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { AppComponent } from './app.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { NewGeocacheComponent } from './new-geocache/new-geocache.component';
+import { GeocacheDetailComponent } from './geocache-detail/geocache-detail.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -25,7 +26,8 @@ export const firebaseConfig = {
   declarations: [
     AppComponent,
     WelcomeComponent,
-    NewGeocacheComponent
+    NewGeocacheComponent,
+    GeocacheDetailComponent
   ],
   imports: [
     BrowserModule,
