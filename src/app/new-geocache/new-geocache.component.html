@@ -12,8 +12,16 @@
     <label class="lng" for="newLng"></label>
     <input type="text" #newLng> New Longitude<br>
 
-    <label class="address" for="newAdd"></label>
-    <input type="text" #newAdd> New Address<br>
+    <!-- <label class="address" for="newAdd"></label>
+    <input type="text" #newAdd> New Address<br> -->
 
   <button (click)="submitForm(newName.value, newLat.value, newLng.value, newAdd.value); newName.value=''; newLat.value=''; newLng.value=''; newAdd.value=''">Add</button>
+
 </form>
+
+<!-- <div *ngFor="let geocache of geocaches| async" (click)="goToDetailPage(geocache)" class="panel panel-default">
+  <div class="panel-body">
+    <h3>lat:{{geocache.lat}}</h3>
+    <h3>lng:{{geocache.lng}}</h3>
+  </div>
+</div> -->

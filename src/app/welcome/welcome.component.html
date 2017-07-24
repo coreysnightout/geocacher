@@ -3,3 +3,11 @@
 </p>
 
 <h4>geocaches</h4>
+<div *ngIf="caches">
+  <div *ngFor="let cache of caches | async">
+    <p>{{cache.name}}</p>
+    <p>{{cache.lat}}</p>
+    <p>{{cache.lng}}</p>
+    <p>{{cache.address}}</p>
+  </div>
+</div>

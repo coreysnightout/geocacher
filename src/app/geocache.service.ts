@@ -3,11 +3,12 @@ import { geoKey } from './api-keys';
 import { Http, Response } from '@angular/http';
 import { Observable } from 'rxjs/Observable';
 import { Geocache } from './geocache.model';
-import { SaveGeocacheService } from './save-geocache.service';
+// import { SaveGeocacheService } from './save-geocache.service';
 
+@Injectable()
 export class GeocacheService {
 
-  constructor(private http: Http, private saveGeocacheService: SaveGeocacheService) { }
+  constructor(private http: Http) { }
 
   getPhysicalAddress(lat: string, lng: string) {
     return this.http.get("https://maps.googleapis.com/maps/api/geocode/json?latlng="+lat+","+lng+"&key="+geoKey);
